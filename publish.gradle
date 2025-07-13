@@ -187,27 +187,6 @@ publishing {
             url = releasesRepoUrl
         }
     }
-
-    publications {
-        mavenNative(MavenPublication) {
-            groupId = "com.vendor.frc"
-            artifactId = "Vendor-driver"
-            version = "0.0.1"
-
-            // Main POM — you don't need a main artifact if this is only for native zips
-            // artifact("someMainArtifact.jar")
-
-            artifact("$releasesRepoUrl/com/vendor/frc/Vendor-driver/$pubVersion/Vendor-driver-$pubVersion-linuxathena.zip") {
-                classifier = "linuxathena"
-                extension = "zip"
-            }
-
-            artifact("$releasesRepoUrl/com/vendor/frc/Vendor-driver/$pubVersion/Vendor-driver-$pubVersion-osxuniversal.zip") {
-                classifier = "osxuniversal"
-                extension = "zip"
-            }
-        }
-    }
 }
 
 task cleanReleaseRepo(type: Delete) {
