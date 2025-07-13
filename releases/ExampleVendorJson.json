@@ -5,7 +5,7 @@
     "frcYear": "2025",
     "uuid": "75b19be2-5cc0-4c29-a54c-8b03149902ef",
     "mavenUrls": [
-        "https://12jeef.github.io/vendor-template/releases/repos/com/vendor/frc"
+        "https://12jeef.github.io/vendor-template/releases/repos"
     ],
     "jsonUrl": "https://12jeef.github.io/vendor-template/releases/ExampleVendorJson.json",
     "javaDependencies": [
