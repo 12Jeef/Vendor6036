@@ -1,5 +1,6 @@
 #include "jni.h"
-#include "com_vendor_jni_VendorJNI.h"
+#include "com_peninsula_jni_VendorJNI.h"
+#include <iostream>
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
     // Check to ensure the JNI version is valid
@@ -16,7 +17,8 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
 
 JNIEXPORT void JNICALL JNI_OnUnload(JavaVM* vm, void* reserved) {}
 
-JNIEXPORT jint JNICALL Java_com_vendor_jni_VendorJNI_initialize
+JNIEXPORT jint JNICALL Java_com_peninsula_jni_VendorJNI_initialize
   (JNIEnv *, jclass) {
+  std::cout << "Hello World";
   return 0;
 }
