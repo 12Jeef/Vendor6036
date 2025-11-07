@@ -1,21 +1,240 @@
 {
-    "fileName": "Vendor6036.json",
-    "name": "Vendor6036",
-    "version": "${version}",
+    "fileName": "Phoenix6-frc2025-latest.json",
+    "name": "CTRE-Phoenix (v6)",
+    "version": "25.4.0",
     "frcYear": "2025",
-    "uuid": "75b19be2-5cc0-4c29-a54c-8b03149902ef",
+    "uuid": "e995de00-2c64-4df5-8831-c1441420ff19",
     "mavenUrls": [
-        "https://12jeef.github.io/Vendor6036/releases/repos"
+        "https://maven.ctr-electronics.com/release/"
     ],
-    "jsonUrl": "https://12jeef.github.io/Vendor6036/releases/Vendor6036.json",
+    "jsonUrl": "https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-frc2025-latest.json",
+    "conflictsWith": [
+        {
+            "uuid": "e7900d8d-826f-4dca-a1ff-182f658e98af",
+            "errorMessage": "Users can not have both the replay and regular Phoenix 6 vendordeps in their robot program.",
+            "offlineFileName": "Phoenix6-replay-frc2025-latest.json"
+        }
+    ],
     "javaDependencies": [
         {
-            "groupId": "${groupId}",
-            "artifactId": "${artifactId}-java",
-            "version": "${version}"
+            "groupId": "com.ctre.phoenix6",
+            "artifactId": "wpiapi-java",
+            "version": "25.4.0"
         }
     ],
     "jniDependencies": [
+        {
+            "groupId": "com.ctre.phoenix6",
+            "artifactId": "api-cpp",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "linuxathena"
+            ],
+            "simMode": "hwsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6",
+            "artifactId": "tools",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "linuxathena"
+            ],
+            "simMode": "hwsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "api-cpp-sim",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "tools-sim",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simTalonSRX",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simVictorSPX",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simPigeonIMU",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simCANCoder",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProTalonFX",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProTalonFXS",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProCANcoder",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProPigeon2",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProCANrange",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProCANdi",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        },
+        {
+            "groupId": "com.ctre.phoenix6.sim",
+            "artifactId": "simProCANdle",
+            "version": "25.4.0",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "windowsx86-64",
+                "linuxx86-64",
+                "linuxarm64",
+                "osxuniversal"
+            ],
+            "simMode": "swsim"
+        }
+    ],
+    "cppDependencies": [
         {
             "groupId": "com.ctre.phoenix6",
             "artifactId": "wpiapi-cpp",
@@ -255,57 +474,6 @@
                 "osxuniversal"
             ],
             "simMode": "swsim"
-        },
-        {
-            "groupId": "${groupId}",
-            "artifactId": "${artifactId}-driver",
-            "version": "${version}",
-            "skipInvalidPlatforms": true,
-            "isJar": false,
-            "validPlatforms": [
-                "windowsx86-64",
-                "linuxarm64",
-                "linuxx86-64",
-                "linuxathena",
-                "linuxarm32",
-                "osxuniversal"
-            ]
-        }
-    ],
-    "cppDependencies": [
-        {
-            "groupId": "${groupId}",
-            "artifactId": "${artifactId}-cpp",
-            "version": "${version}",
-            "libName": "Vendor",
-            "headerClassifier": "headers",
-            "sharedLibrary": false,
-            "skipInvalidPlatforms": true,
-            "binaryPlatforms": [
-                "windowsx86-64",
-                "linuxarm64",
-                "linuxx86-64",
-                "linuxathena",
-                "linuxarm32",
-                "osxuniversal"
-            ]
-        },
-        {
-            "groupId": "${groupId}",
-            "artifactId": "${artifactId}-driver",
-            "version": "${version}",
-            "libName": "VendorDriver",
-            "headerClassifier": "headers",
-            "sharedLibrary": false,
-            "skipInvalidPlatforms": true,
-            "binaryPlatforms": [
-                "windowsx86-64",
-                "linuxarm64",
-                "linuxx86-64",
-                "linuxathena",
-                "linuxarm32",
-                "osxuniversal"
-            ]
         }
     ]
 }

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <ctre/phoenix6/core/CoreTalonFX.hpp>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
