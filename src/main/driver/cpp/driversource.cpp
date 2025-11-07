@@ -1,7 +1,8 @@
 #include "driverheader.h"
+#include <iostream>
 
 extern "C" {
-void c_doThing() {
-
+void helloWorld() {
+    std::cout << "Hello World!\n";
 }
 }

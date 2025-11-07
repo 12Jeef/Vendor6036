@@ -4,7 +4,7 @@
 extern "C" {
 #endif
 
-void c_doThing();
+void helloWorld();
 
 #ifdef __cplusplus
 }  // extern "C"
